@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/login_style.css' %}">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<title></title>
+</head>
+<body>
+
+	<header id="header" class="">
+		<div class="title-div">
+			<h1 id="title"> FEDERAL UNIVERSITY OYE EKITI <br>Computer Base Test (CBT) System</h1> 
+		</div>	
+	</header>
+
+	<section>
+		<div class="login-div">
+			<div class="form-div">
+				<div class="logo">
+					<img src="{%static '/img/logo.png'%}" alt="logo">
+				</div>
+				<h2 class="log"><i class="fa fa-lock" aria-hidden="true"></i> &nbsp; Log in to your Dashboard </h2>
+				<hr color= "green">
+                <p class="log-desc">Enter your Matric No. and Password</p>
+
+                <!-- FORM SESSION -->
+                <form id="loginForm" method="POST" action="" autocomplete="autocomplete">
+                        {% csrf_token %}
+
+                    <p>    
+	                    <label> <span class="label">Matric No</span><br>
+	                    	<input type="text" name="username" placeholder="Enter your Matric No.">
+	                    </label>
+                    </p>
+
+                     <p>    
+	                    <label> <span class="label">Password</span><br>
+	                    	<input type="password" name="password" placeholder="Enter your Password">
+	                    </label>
+                    </p>
+
+
+                    <button class="login-btn" type="submit">Login</button>
+                	
+                </form>
+
+                <p class="fgt-pwd">
+                	<a href="#">forget password?</a>
+                </p>
+				
+			</div>
+
+			<!-- FORM DESCRIPTIONS -->
+			<div class="notification-div">
+				<i class="far fa-user" id="user"></i>
+                <h2 class="hello">Dear Candidate! </h2>
+                <hr color=grey>
+                <p class="infor"><strong>NOTE :</strong> Kindly Enter Your Matric No. and your Password To Access Your Dashboard.
+                     If you have any issue, kindly contact our <br> <a href="mailto:info@example.com" style="color: #afae20;">Support Team</a>
+                </p>
+                
+                <hr color=grey>
+                <p class="infor text-center"> 
+                <strong style="font-size: 18px;"> 
+                    For the Admin,
+                     you are to login with your StaffID and your registered Password to Access Your Dashbord. 
+                     <br>
+                    Click the button bellow to Login.  
+                </strong>
+                </p>
+			</div>
+
+		</div>
+	</section>
+
+
+</body>
+</html>
