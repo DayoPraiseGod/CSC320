@@ -54,6 +54,13 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 10px 0;
 }
 
+#user {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-size: 50px;
+}
+
 @media(max-width: 630px) {
 	.login-div {
 		width: 85%;
@@ -130,6 +137,16 @@ h1, h2, h3, h4, h5, h6 {
 	box-shadow: 0px 0px 10px green;
 }
 
+#login-form {
+	padding: 0 10px;
+}
+
+#error {
+    color:rgb(223, 70, 70);
+    margin: 5px;
+    text-align: center;
+}
+
 .login-btn {
 	width: 100%;
 	height: 40px;
@@ -137,6 +154,7 @@ h1, h2, h3, h4, h5, h6 {
 	border: none;
 	font-size: 20px;
 	font-weight: 600;
+	color: #ddd;
 }
 
 .login-btn:hover {
@@ -148,11 +166,24 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	margin-top: 20px;
 	padding-left: 5px;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 .fgt-pwd a{
 	/* text-decoration: none; */
 	color: green;
+}
+
+.foot {
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-style: dotted;
+    border-top-width: 2px;
+    border-top-color: rgb(56, 51, 51);
+    color: rgb(56, 51, 51);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
 }
 
